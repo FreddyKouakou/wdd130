@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+  --primary-color: #2DC7FF;
+  --secondary-color: #00ABE7;
+  --accent1-color: #0081AF;
+  --accent2-color: #EABA6B;
+
+  --heading-font: 'Open Sans', serif;
+  --paragraph-font: 'Open Sans', serif;
+
+  --nav-background-color: #2DC7FF;
+  --nav-link-color: #0081AF;
+  --nav-hover-link-color: #0081AF;
+  --nav-hover-background-color: #EABA6B;
+}
+body{
+width: 2rem;
+}
+
+h1, h2{
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+.sociallinks a {
+text-decoration: none;
+}
+
