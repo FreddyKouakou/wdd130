@@ -22,23 +22,33 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 6fr 6fr;
+  grid-template-columns: 1fr auto;
   align-items: center;
+  background: var(--accent1-color);
+  padding: 10px;
 
 }
 
 header img {
   width: 100px;
+  margin-left: 100px;
+  grid-column: 1 / 2;
 }
 
 nav {
   display: flex;
+  justify-content: flex-end;
+  grid-column: 2 / 3;
+  margin-right: 50px;
 }
 
 .nav a {
   border: 1px solid black;
   width: 100px;
   text-align: center;
+  background: var(--nav-background-color);
+  color: #fff;
+  font-size: 18px;
   text-decoration: none;
 
 }
@@ -144,17 +154,25 @@ figcaption {
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: var(--accent1-color);
   
+}
+footer p {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding-left: 150px;
 }
 .sociallinks img {
   width: 30px;
-  float: ;
+  margin:10px 5px;
 }
-.sociallinks a {
-  
-
-}
-footer p {
-  text-align: center;
+.sociallinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
