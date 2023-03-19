@@ -129,7 +129,7 @@ h2 {
 
 .adventure {
   display: grid;
-  justify-items: center;;
+  justify-items: center;
   
 }
 
@@ -140,9 +140,11 @@ h2 {
   margin-left: -40px;
 }
 
+
+
 .adv_img figure img {
-  max-width: 130px;
-  max-height: 150px;
+  max-width: 150px;
+  max-height: 200px;
   
 }
 figcaption {
@@ -163,6 +165,7 @@ footer {
 footer p {
   display: inline-block;
   text-align: center;
+  color: #fff;
   width: 100%;
   padding-left: 150px;
 }
