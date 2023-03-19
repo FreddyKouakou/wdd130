@@ -147,6 +147,7 @@ h2 {
   max-height: 200px;
   
 }
+
 figcaption {
     color: black;
     font: italic smaller sans-serif;
@@ -162,6 +163,7 @@ footer {
   background: var(--accent1-color);
   
 }
+
 footer p {
   display: inline-block;
   text-align: center;
@@ -169,13 +171,16 @@ footer p {
   width: 100%;
   padding-left: 150px;
 }
-.sociallinks img {
-  width: 30px;
-  margin:10px 5px;
-}
+
 .sociallinks {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
+
+.sociallinks img {
+  width: 30px;
+  margin:10px 5px;
+}
+
