@@ -149,7 +149,7 @@ h2 {
 }
 
 figcaption {
-    color: black;
+    color: #333;
     font: italic smaller sans-serif;
     text-align: center;
 }
