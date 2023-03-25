@@ -43,7 +43,7 @@ nav {
 }
 
 .nav a {
-  border:none;
+  border: 1px solid black;
   width: 100px;
   text-align: center;
   background: var(--nav-background-color);
