@@ -8,6 +8,7 @@
 
   --heading-font: 'Open Sans', serif;
   --paragraph-font: 'Open Sans', serif;
+  --text-color: #444;
 
   --nav-background-color: #2DC7FF;
   --nav-link-color: #0081AF;
@@ -21,49 +22,40 @@ body {
 }
 
 header {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  background: var(--accent1-color);
-  padding: 10px;
-
+  padding: 20px;
+  background-color: #f9c1;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  height: 50px;
 }
-
 header img {
   width: 100px;
-  margin-left: 100px;
-  grid-column: 1 / 2;
 }
 
 nav {
   display: flex;
-  justify-content: flex-end;
-  grid-column: 2 / 3;
-  margin-right: 50px;
+  width: 400px;
+  font-family: var(--paragraph-font);
 }
 
-.nav a {
-  border: 1px solid black;
-  width: 100px;
-  text-align: center;
-  background: var(--nav-background-color);
-  color: #fff;
-  font-size: 18px;
+nav a {
+  display: block;
+  padding: 20px ;
+  color: #444;
   text-decoration: none;
-}
-
-nav a:active {
-  color: #0e3959;
+  font-weight: 600;
+  transition: all .3s ease;
 }
 
 nav a:hover {
-  color: var(--nav-hover-background-color);
+  color: #e74c3c;
 }
-
 h1,
 h2 {
   font-family: var(--heading-font);
-  color: var(--primary-color);
+  color: var(--text-color);
 }
 
 .sociallinks a {
@@ -87,10 +79,11 @@ h2 {
 
 }
 
-.hero h1 {
+.hero .hero-h {
   position: absolute;
   text-align: center;
   display: inline-block;
+  color: white;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   margin-top: 30px;
@@ -111,7 +104,7 @@ h2 {
   padding: 10px;
 }
 
-.hero article p {
+.hero article .hero-p {
   color: white;
   font-size: 1.2rem;
   margin: 10px;
@@ -167,14 +160,14 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: var(--accent1-color);
+  background:  #444;;
 
 }
 
 footer p {
   display: inline-block;
   text-align: center;
-  color: #fff;
+  color: white;
   width: 100%;
   padding-left: 150px;
 }
@@ -193,7 +186,7 @@ footer p {
 
 /*Contact Us */
 .contactUs {
-  background: linear-gradient(90deg, #0e3959 0%, #0e3959 30%, #03a9f5 30%, #03a9f5 100%);
+  background: linear-gradient(90deg, #F5F5F5 0%, #F5F5F9 30%,  #E5E5E5 30%,  #E5E5E5 100%);
 }
 
 .contact_us {
@@ -206,7 +199,7 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-style: 2em;
+  font-style: 20px;
 }
 
 .contact .title h2 {
@@ -272,7 +265,7 @@ footer p {
 }
 
 .inputBox span {
-  color: #18b7FF;
+  color: var(--text-color);
   margin-top: 10px;
   margin-bottom: 5px;
   font-weight: 500;
@@ -294,6 +287,7 @@ footer p {
   min-height: 150px;
   margin-bottom: 10px;
 }
+
 .inputBox input[type="submit"] {
   background: #ff578b;
   color: #fff;
@@ -305,9 +299,11 @@ footer p {
   cursor: pointer;
   padding: 14px 15px;
 }
+
 .purpose legend {
-  color: #18b7FF;
+  color: var(--text-color);
 }
+
 .inputBox ::placeholder {
   color: #999;
 }
@@ -316,14 +312,17 @@ footer p {
 .info {
   background: #0e3959;
 }
+
 .info h3 {
   color: #fff;
 }
+
 .info .infoBox div {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
+
 .info .infoBox div span {
   min-width: 40px;
   height: 40px;
@@ -336,19 +335,402 @@ footer p {
   border-radius: 50%;
   margin-right: 15px;
 }
+
 .infoBox div p {
   color: #fff;
   font-size: 1.1em;
 }
+
 .infoBox div a {
   color: #fff;
   text-decoration: none;
   font-size: 1.1em;
 }
+
 .map {
   padding: 0;
 }
+
 .map iframe {
   width: 100%;
   height: 100%;
+}
+
+/* trips */
+
+/* call to action */
+#cta {
+  background-image: url('../images/trip1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  /* adjust this value as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: 100%;
+  /* start with a zoomed-in image */
+  transition: background-size 1s ease-out;
+  /* slow down the transition */
+}
+
+#cta:hover {
+  background-size: 150%;
+  /* zoom out the image on hover */
+}
+
+.cta-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* add a semi-transparent black overlay */
+  padding: 50px;
+  color: #fff;
+}
+
+.cta-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.cta-content p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.cta-content .button {
+  display: inline-block;
+  font-size: 20px;
+  padding: 12px 40px;
+  background-color: #000077;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+
+.cta-content .button:hover {
+  background-color: #0062cc;
+  cursor: pointer;
+}
+
+/* class trip */
+.trip-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.trip {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.trip-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.trip-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.trip-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: transform 0.3s ease-in-out;
+}
+
+.trip_title {
+  margin-top: 0;
+}
+
+.trip_description {
+  display: none;
+}
+
+.trip:hover .trip-image img {
+  transform: scale(1.1);
+}
+
+.trip:hover .trip-content {
+  transform: translateY(25px);
+  transition: all 0.5s ease-in-out;
+}
+
+.trip:hover .trip_description {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .trip-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* #trips-table */
+#trips-table {
+  margin: 50px auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#trips-table h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+@media only screen and (max-width: 600px) {
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  td {
+    border-bottom: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  td:nth-of-type(1):before {
+    content: "Trip Name:";
+  }
+
+  td:nth-of-type(2):before {
+    content: "Location:";
+  }
+
+  td:nth-of-type(3):before {
+    content: "Difficulty:";
+  }
+
+  td:nth-of-type(4):before {
+    content: "Duration:";
+  }
+
+  td:nth-of-type(5):before {
+    content: "Price:";
+  }
+}
+
+#cta-2 {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 50px;
+}
+
+#cta-2 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#cta-2 p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+#cta-2 .btn {
+  display: inline-block;
+  background-color: #000077;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#cta-2 .btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* homepage */
+.index-hero {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  margin-bottom: 50px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #e8f3f8;
+}
+
+.hero-content h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.hero-content .hero-cont-p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #00007f;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  border-width: 2px;
+  border-color: #03a9f5;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.grid-item h3 {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.grid-item p {
+  margin: 1rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.newsletter label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter button {
+  background-color: #000077;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 100%;
+  margin: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.newsletter button:hover {
+  background-color: #005ea3;
 }

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="This is my home page">
+    <meta name="author" content="Freddy Kouakou">
+    <title>Trips | WDD 130</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo15_200.png" alt="">
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="#">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cta">
+            <div class="cta-content">
+                <h1>Join us on a rafting adventure!</h1>
+                <p>Looking for an exciting and memorable outdoor experience? Contact us to book your trip today!</p>
+                <a href="contact.html" class="button">Contact Us</a>
+            </div>
+        </section>
+        <div class="trip-container">
+            <section id="trip1" class="trip">
+                <div class="trip-image">
+                    <img src="images/trip1.jpg" alt="Rafting on the Colorado River">
+                </div>
+                <div class="trip-content">
+                    <h2 class="trip_title">Trip 1: Colorado River</h2>
+                    <p class="trip_description">Join us for a thrilling ride down the Colorado River! This trip is
+                        perfect for experienced
+                        rafters looking for a challenge. The rapids on this section of the river are rated Class IV and
+                        V, so be prepared for some intense whitewater action. Along the way, you'll also have the chance
+                        to take in the stunning scenery of the Grand Canyon.</p>
+                </div>
+            </section>
+            <section id="trip2" class="trip">
+                <div class="trip-image">
+                    <img src="images/trip2.jpg" alt="Rafting on the Snake River">
+                </div>
+                <div class="trip-content">
+                    <h2 class="trip_title">Trip 2: Snake River</h2>
+                    <p class="trip_description">For a more mellow experience, try our Snake River trip. This trip is
+                        great for families and
+                        first-time rafters. You'll float through the beautiful Jackson Hole valley, with stunning views
+                        of the Teton Mountains. Along the way, your guide will share interesting facts about the local
+                        flora and fauna.</p>
+                </div>
+            </section>
+            <section id="trip3" class="trip">
+                <div class="trip-image">
+                    <img src="images/trip3.jpg" alt="Rafting on the Ocoee River">
+                </div>
+                <div class="trip-content">
+                    <h2 class="trip_title">Trip 3: Ocoee River</h2>
+                    <p class="trip_description">Looking for a bit of history with your rafting adventure? Check out our
+                        Ocoee River trip! This
+                        section of the river was the site of the 1996 Summer Olympics whitewater events. You'll paddle
+                        through the same rapids that Olympians did, including the infamous "Humongous" rapid. Don't
+                        worry, though – our experienced guides will keep you safe.</p>
+                </div>
+            </section>
+        </div>
+        <section id="trips-table">
+            <h2>Available Trips</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Location</th>
+                        <th>Difficulty</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Colorado River</td>
+                        <td>Grand Canyon, Arizona</td>
+                        <td>Class IV-V</td>
+                        <td>5 days</td>
+                        <td>$2,500</td>
+                    </tr>
+                    <tr>
+                        <td>Snake River</td>
+                        <td>Jackson Hole, Wyoming</td>
+                        <td>Class III-IV</td>
+                        <td>3 days</td>
+                        <td>$1,500</td>
+                    </tr>
+                    <tr>
+                        <td>Ocoee River</td>
+                        <td>Copperhill, Tennessee</td>
+                        <td>Class III-IV</td>
+                        <td>2 days</td>
+                        <td>$1,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="cta-2">
+            <h2>Ready to book your adventure?</h2>
+            <p>Don't wait - our trips fill up fast! Book your adventure today.</p>
+            <a href="contact.html#booking-form" class="btn btn-primary">Book Now</a>
+        </section>
+    </main>
+
+
+
+    <!-- <main>
+       
+        <h1>Trips</h1>
+        <h2>Choose Your Adventure</h2>
+        <section class="trip">
+            <img src="hiking.jpg" alt="Hiking">
+            <div class="description">
+                <h3>Hiking Trip</h3>
+                <p>Explore the great outdoors with our guided hiking trips. We'll take you to some of the most
+                    breathtaking trails in the region. No experience necessary!</p>
+                <a href="#">Learn More</a>
+            </div>
+            <ul class="equipment">
+                <li>Tent</li>
+                <li>Sleeping Bag</li>
+                <li>Hiking Boots</li>
+                <li>Backpack</li>
+            </ul>
+        </section>
+        <section class="trip">
+            <img src="kayaking.jpg" alt="Kayaking">
+            <div class="description">
+                <h3>Kayaking Trip</h3>
+                <p>Experience the thrill of the rapids with our kayaking trips. Our expert guides will teach you the
+                    basics and help you navigate the river safely.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <ul class="equipment">
+                <li>Kayak</li>
+                <li>Paddle</li>
+                <li>Life Jacket</li>
+                <li>Helmet</li>
+            </ul>
+        </section>
+        <section class="trip">
+            <img src="camping.jpg" alt="Camping">
+            <div class="description">
+                <h3>Camping Trip</h3>
+                <p>Unwind and reconnect with nature on one of our camping trips. We'll provide everything you need to
+                    make your stay comfortable and memorable.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <ul class="equipment">
+                <li>Tent</li>
+                <li>Sleeping Bag</li>
+                <li>Camp Stove</li>
+                <li>Cooler</li>
+            </ul>
+        </section>
+
+    </main> -->
+    <footer>
+        <p>&copy;2023 🎉 Freddy Kouakou,🎉 RAFTING</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twiter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <img src="images/Wireframe.png" alt="Wireframe">
+        </nav>
+    </footer>
+</body>
+
+</html>
